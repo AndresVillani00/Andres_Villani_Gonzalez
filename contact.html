@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h1>Ejercicio 3 Formulario</h1>
+
+    <form>
+        <label for="Provincias">Introduzca su Provincia:</label>
+        <input type="text" list="Provincias" placeholder="             Provincias">
+        <datalist id="Provincias">
+            <option value="Comunidad de Madrid">
+            <option value="Cataluña">
+            <option value="País Vasco">
+            <option value="Comunidad Valenciana">
+            <option value="Canarias">
+        </datalist>
+
+        <p>
+            <label for="nombre">Introduzca su Nombre Completo:</label>
+            <input type="text" required id="nombre" name="nombre" placeholder="               Nombre" autocomplete="nombre" autofocus />
+        </p>
+        <p>
+            <label for="email">Introduzca su Correo Electronico:</label>
+            <input type="email" id="email" name="email" />
+        </p>
+        <p>
+            <label for="DNI">Seleccione una foto de su DNI</label>
+            <input type="file" id="DNI" name="DNI" />
+        </p>
+        <p>
+            <label for="telefono">Introduzca su Numero Telefonico</label>
+            <input type="tel" id="telefono" name="telefono" />
+        </p>
+        <p>
+            <label for="hermanos">Tienes Hermanos</label>
+            <input type="checkbox" id="hermanos" name="hermanos" />
+        </p>
+        <p>
+            <label for="hermanos2">¿Cuantos Hermanos tienes?</label>
+            <input type="number" min="0" max="10" id="hermanos2" name="hermanos2" />
+        </p>
+        <p>
+            <label for="fecha">Introduzca su Fecha de nacimiento</label>
+            <input type="date" id="fecha" name="fecha" />
+        </p>
+        <p>
+            <label for="terminos">Aceptas los terminos legales?</label>
+            <input type="radio" id="terminos" name="terminos" />
+        </p>
+        <p>
+            <label for="color">¿Cual es tu color favorito?</label>
+            <input type="color" id="color" name="color" />
+        </p>
+        <p>
+            <label for="hora">¿A que hora estas realizando este formulario?</label>
+            <input type="time" id="hora" name="hora" />
+        </p>
+        <p>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña" minlength="8" pattern="[0-9]{1}-[a-z]-[A-Z]{1}"/>
+        </p>
+        <p>
+            <input type="reset">
+            <input type="submit"/>
+        </p>
+
+        <progress id="nombre" min="0" max="100" value="58"></progress>
+    </form>
+</body>
+</html>
